@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>segundo-caso</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">segundo-caso</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  @for (animal of animales; track $index){
+    <ion-item>{{animal}}</ion-item>
+  }
+
+  <ion-header>
+    <ion-title id="tittle">VideoGames usando ngFor</ion-title>
+  </ion-header>
+  <ion-item *ngFor="let Games of BestVideoGames" id="game">
+    {{Games}}
+  </ion-item>
+</ion-content>
