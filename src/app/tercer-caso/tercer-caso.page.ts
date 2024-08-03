@@ -15,7 +15,7 @@ export class TercerCasoPage {
   dni: string = '';
   showDNI: boolean = false;
 
-  showFunction():void {
+  showFunction(): void {
     if(this.dni.length > 14){
       this.showDNI = true;
     }else {

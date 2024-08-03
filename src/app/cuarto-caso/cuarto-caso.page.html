@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>cuarto-caso</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">cuarto-caso</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<div [ngClass]="{'aprobado': nota >= 65, 'reprobado': nota < 65}">
+  <p>El color de este mensaje determina su nota final</p>
+</div>
+
+</ion-content>
